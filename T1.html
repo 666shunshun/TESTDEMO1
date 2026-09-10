@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syarikat Perniagaan Elektrik Berdikari Sdn Bhd</title>
+    <link rel="stylesheet" href="StyleT1.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-float">
+
+    <div class="whatsapp-bubble">
+        <strong>Need Help?</strong>
+        <span>Chat with us on WhatsApp</span>
+    </div>
+
+    <a href="https://wa.me/60173669886" 
+       target="_blank" 
+       class="whatsapp-button">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</div>
+
+<body>
+    <!-- 顶部固定导航栏 -->
+    <header>
+        <button class="menu">&#9776;</button>
+        <div class="header-brand">
+            <img src="Images/berdikari.logo.png" alt="Berdikari logo" class="header-logo">
+            <h1>Syarikat Perniagaan Elektrik Berdikari Sdn Bhd</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <!-- 1. 修改 About 为 Products -->
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 主页 Hero 欢迎区（占据全屏高度） -->
+        <section class="home" id="Home">
+            <div class="slideshow">
+                <div class="slide slide1"></div>
+                <div class="slide slide2"></div>
+                <div class="slide slide3"></div>
+            </div>
+
+            <div class="home-content">
+                <h2>Welcome to Berdikari</h2>
+                <!-- <a href="https://maps.app.goo.gl/Roun6vBh8U3yHfnV7" class="btn-location" target="_blank">Get our location</a> -->
+            </div>
+        </section>
+
+        <!-- 简介过渡区 -->
+        <section class="intro">
+            <blockquote>Our company since 1990</blockquote>
+        </section>
+
+        <!-- 现代白卡片折叠选单区 (加上 id="Products") -->
+        <section class="category-wrapper" id="Products">
+
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="productSearchInput" placeholder="Search products, brands, or categories..." onkeyup="filterProducts()">
+                    <button type="button" class="clear-btn" id="clearSearchBtn" onclick="clearSearch()">✕</button>
+                </div>
+            </div>
+            <details class="category-box" open>
+                
+            <!-- 1. 风扇分类 -->
+            <details class="category-box" open>
+                <summary class="category-header">Ceiling Fans</summary>
+                
+                <div class="brand-group">
+                    <details class="brand-box" open>
+                        <summary class="brand-header">Alkova Series</summary>
+                        <div class="product-grid">
+                            <div>
+                                <img src="Images/Alkova1.png" alt="Alkova MILI">
+                                <h4>Alkova MILI HG-3B/33</h4>
+                                <p>Colour: Matt White</p>
+                            </div>
+                            <div>
+                                <img src="Images/Alkova2.png" alt="Alkova ESTELL">
+                                <h4>Alkova ESTELL-5B/46</h4>
+                                <p>Colour: Walnut / Matt Black</p>
+                            </div>
+                            <div>
+                                <img src="Images/Alkova3.png" alt="Alkova Amax7">
+                                <h4>Alkova Amax7-7B/72</h4>
+                                <p>Colour: Walnut / Matt Black</p>
+                            </div>
+                            <div>
+                                <img src="Images/Alkova4.png" alt="Alkova Axis">
+                                <h4>Alkova Axis-3B/56</h4>
+                                <p>Colour: Matt White / Matt Black</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="brand-box">
+                        <summary class="brand-header">Vannus Series</summary>
+                        <div class="product-grid">
+                            <div>
+                                <img src="Images/Vannus1.png" alt="Vannus HARU">
+                                <h4>Vannus HARU-3B/56</h4>
+                                <p>Colour: Chestnut / Matt White</p>
+                            </div>
+                            <div>
+                                <img src="Images/Vannus2.png" alt="Vannus PRISTI">
+                                <h4>Vannus PRISTI-5B/40 LED</h4>
+                                <p>Colour: Walnut / Matt Black</p>
+                            </div>
+                            <div>
+                                <img src="Images/Vannus3.png" alt="Vannus Iriz">
+                                <h4>Vannus Iriz-5B/40 LED</h4>
+                                <p>Colour: Walnut / Matt Black</p>
+                            </div>
+                            <div>
+                                <img src="Images/Vannus4.png" alt="Vannus Iriz 56">
+                                <h4>Vannus Iriz-5B/56</h4>
+                                <p>Colour: Walnut / Matt Black</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="brand-box">
+                        <summary class="brand-header">Cosa Series</summary>
+                        <div class="product-grid">
+                            <div>
+                                <img src="Images/Cosa1.png" alt="Cosa EX6">
+                                <h4>Cosa EX6-5B/40</h4>
+                                <p>Colour: Maple / Matt White</p>
+                            </div>
+                            <div>
+                                <img src="Images/Cosa2.png" alt="Cosa CX10">
+                                <h4>Cosa CX10-5B/56</h4>
+                                <p>Colour: Walnut / Matt Black</p>
+                            </div>
+                            <div>
+                                <img src="Images/Cosa3.png" alt="Cosa CX30">
+                                <h4>Cosa CX30-5B/30 LED</h4>
+                                <p>Colour: Walnut / Matt Black</p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+            <!-- 2. 灯具分类 -->
+            <details class="category-box">
+                <summary class="category-header">Lighting & Lamps</summary>
+                <div class="brand-group">
+                    <details class="brand-box">
+                        <summary class="brand-header">Philips Series</summary>
+                        <div class="product-grid">
+                            <div>
+                                <img src="Images/Philip1.png" alt="Philips Ceiling Light">
+                                <h4>Ceiling Light, 1,800 lm</h4>
+                                <p>Coloured and Tunable White Light</p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+            <!-- 3. 电线与配件分类 -->
+            <details class="category-box">
+                <summary class="category-header">Cables & Accessories</summary>
+                <div class="brand-group">
+                    <details class="brand-box">
+                        <summary class="brand-header">Standard Cables</summary>
+                        <div class="product-grid">
+                            <div>
+                                <img src="Images/wire1.png" alt="Electric Wire">
+                                <h4>Copper Electric Cable</h4>
+                                <p>High Performance Insulated Wire</p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+        </section>
+    </main>
+
+
+
+    <footer id="Contact">
+        <div class="footer-container">
+            <!-- 第 1 列：公司名称与简介 -->
+            <div class="footer-col brand-col">
+                <h2>Syarikat Perniagaan Elektrik Berdikari Sdn Bhd</h2>
+                <p>Providing a wide range of premium, high-quality electrical appliances, lighting, and wiring solutions for homes and businesses.</p>
+            </div>
+
+            <!-- 第 2 列：Navigation 快速跳转 -->
+            <div class="footer-col nav-col">
+                <h3>NAVIGATION</h3>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Products">Products</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- 第 3 列：Contact Us 详细联系方式与营业时间 -->
+            <div class="footer-col contact-col">
+                <h3>Contact Us</h3>
+                <p class="address">
+                    <a href="https://maps.app.goo.gl/Ny2NhV4pxEJUjrRB9" target="_blank">
+                        No. 70, Jalan Pasar, Pudu, 55100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur
+                    </a>
+                </p>
+                
+                <div class="business-hours">
+                    <p><strong>Monday – Saturday:</strong> 08:30 – 18:00</p>
+                    <p><strong>Sunday:</strong> 08:30 - 14:30</p>
+                </div>
+
+                <p class="contact-info"><strong>Phone:</strong> <a href="tel:+60173669886">+60173669886</a></p>
+                <p class="contact-info"><strong>Email:</strong> <a href="mailto:boonloong73@gmail.com">boonloong73@gmail.com</a></p>
+            </div>
+
+            <!-- 第 4 列：Google 地图嵌入框（已更新最新地址链接） -->
+            <div class="footer-col map-col">
+                <div class="map-box">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3786.728904416986!2d101.71343177473027!3d3.1352769968401804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc36230d4f0875%3A0x4d021119e226f206!2z56uL5qOu6Zu75Zmo6LK_5piT5pyJ6ZmQ5YWs5Y-4!5e1!3m2!1szh-CN!2smy!4v1788963482483!5m2!1szh-CN!2smy"
+                        width="100%" 
+                        height="240" 
+                        style="border:0; border-radius: 12px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
